@@ -1,7 +1,8 @@
-sideSelectContainer {
-    background-color: white;
+.sideSelectContainer {
     height: 700px;
+    background-color: #ff4255;
     width: 1200px;
     color: black;
     border-radius: 20px;
+    padding-bottom: 36px;
 }

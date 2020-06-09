@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import HeroSelect from './pages/HeroSelect';
 import MapSelect from './pages/MapSelect';
+import SideSelect from './pages/SideSelect';
 import 'rsuite/dist/styles/rsuite-default.css';
 
 function App() {
