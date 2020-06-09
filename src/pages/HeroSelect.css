@@ -1,22 +1,47 @@
+@font-face {
+    font-family: 'VALORANT Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('VALORANT Regular'), url('../assets/Valorant Font.woff') format('woff');
+}
+
 .heroSelectContainer {
-    background-color: white;
-    height: 700px;
+    background-color: #ff4255;
     width: 1200px;
     color: black;
     border-radius: 20px;
+    padding-bottom: 64px;
 }
 
 .heroCardContainer {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
 .heroCard {
     flex: 1;
-    height: 150px;
+    height: 228px;
     width: 150px;
-    background-color: black;
-    margin-left: 10px;
+    background-color: #0F1825;
+    margin-left: 10x;
     margin-right: 10px;
+    border-radius: 20px;
+    background-image: url('../assets/firstHero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroSelectHeader {
+    color: white;
+    font-family: 'VALORANT Regular';
+    margin-top: 24px;
+}
+
+.heroHeaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

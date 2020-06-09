@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import HeroSelect from './pages/HeroSelect';
+import 'rsuite/dist/styles/rsuite-default.css';
 
 function App() {
   return (

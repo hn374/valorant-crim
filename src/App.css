@@ -14,7 +14,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background: #333333;
+  background: -webkit-linear-gradient(to bottom, #dd1818, #333333);
+  background: linear-gradient(to bottom, #dd1818, #333333);  */
+  background-image: url('./assets/valorant_background.jpg');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
