@@ -1,7 +1,56 @@
-mapSelectContainer {
-    background-color: white;
-    height: 700px;
+@font-face {
+    font-family: 'VALORANT Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('VALORANT Regular'), url('../assets/Valorant Font.woff') format('woff');
+}
+
+.mapSelectContainer {
+    background-color: #ff4255;
     width: 1200px;
     color: black;
     border-radius: 20px;
+    padding-bottom: 36px;
+}
+
+.mapSelectHeader {
+    color: white;
+    font-family: 'VALORANT Regular';
+    margin-top: 24px;
+}
+
+.mapCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapCard {
+    /* height: 360px; */
+    height: 400px;
+    width: 22%;
+    background-color: #0F1825;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px 10px;
+}
+
+/* Add all the maps */
+
+#ascent {
+    background-image: url('../assets/ascent.png');
+}
+
+#bind {
+    background-image: url('../assets/bind.png');
+}
+
+#haven {
+    background-image: url('../assets/haven.png');
+}
+
+#split {
+    background-image: url('../assets/split.png');
 }
