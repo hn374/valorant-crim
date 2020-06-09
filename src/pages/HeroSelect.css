@@ -1,0 +1,22 @@
+.heroSelectContainer {
+    background-color: white;
+    height: 700px;
+    width: 1200px;
+    color: black;
+    border-radius: 20px;
+}
+
+.heroCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.heroCard {
+    flex: 1;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
