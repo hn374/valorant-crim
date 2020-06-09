@@ -26,12 +26,17 @@
     height: 228px;
     width: 150px;
     background-color: #0F1825;
+    /* background-color: #ff4255; */
     margin-left: 10x;
     margin-right: 10px;
     border-radius: 20px;
-    background-image: url('../assets/firstHero.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+a:hover, a:focus {
+    height: 250px;
+    /* background-color: #F5F7FB; */
 }
 
 .heroSelectHeader {
@@ -45,3 +50,49 @@
     justify-content: center;
     align-items: center;
 }
+
+/* All the hero cards */
+
+#sage {
+    background-image: url('../assets/sage.png');
+}
+
+#breach {
+    background-image: url('../assets/breach.png');
+}
+
+#brimstone {
+    background-image: url('../assets/brimstone.png');
+}
+
+#cypher {
+    background-image: url('../assets/cypher.png');
+}
+
+#jett {
+    background-image: url('../assets/jett.png');
+}
+
+#omen {
+    background-image: url('../assets/omen.png');
+}
+
+#phoenix {
+    background-image: url('../assets/phoenix.png');
+}
+
+#raze {
+    background-image: url('../assets/raze.png');
+}
+
+#reyna {
+    background-image: url('../assets/reyna.png');
+}
+
+#sova {
+    background-image: url('../assets/sova.png');
+}
+
+/* #viper {
+    background-image: url('../asset/viper.png');
+} */

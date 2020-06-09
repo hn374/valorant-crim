@@ -8,29 +8,22 @@ function HeroSelect() {
                 <h1 className="heroSelectHeader">Select Hero</h1>
             </div>
             <div className="heroCardContainer">
-                <a href="#" className="heroCard"></a>
-                <a href="#" className="heroCard"></a>
-                <a href="#" className="heroCard"></a>
-                <a href="#" className="heroCard"></a>
-                <a href="#" className="heroCard"></a>
-                {/* <div className="heroCard"></div>
-                <div className="heroCard"></div>
-                <div className="heroCard"></div>
-                <div className="heroCard"></div>
-                <div className="heroCard"></div> */}
+                <a href="#" id="sage" className="heroCard"></a>
+                <a href="#" id="breach" className="heroCard"></a>
+                <a href="#" id="brimstone" className="heroCard"></a>
+                <a href="#" id="cypher" className="heroCard"></a>
+                <a href="#" id="jett" className="heroCard"></a>
             </div>
             <div className="heroCardContainer">
-                <a href="#" className="heroCard"></a>
-                <a href="#" className="heroCard"></a>
-                <a href="#" className="heroCard"></a>
-                <a href="#" className="heroCard"></a>
-                <a href="#" className="heroCard"></a>
-                {/* <div className="heroCard"></div>
-                <div className="heroCard"></div>
-                <div className="heroCard"></div>
-                <div className="heroCard"></div>
-                <div className="heroCard"></div> */}
+                <a href="#" id="omen" className="heroCard"></a>
+                <a href="#" id="phoenix" className="heroCard"></a>
+                <a href="#" id="raze" className="heroCard"></a>
+                <a href="#" id="reyna" className="heroCard"></a>
+                <a href="#" id="sova"className="heroCard"></a>
             </div>
+            {/* <div className="heroCardContainer">
+                <a href="#" id="viper" className="heroCard"></a>
+            </div> */}
         </div>
     );
 }
