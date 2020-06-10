@@ -5,6 +5,7 @@ function MapSelect() {
     return(
         <div className="mapSelectContainer">
             <div className="mapHeaderContainer">
+                <button className="mapBackButton">Back</button>
                 <h1 className="mapSelectHeader">Select Map</h1>
             </div>
             <div className="mapCardContainer">
