@@ -10,7 +10,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <HeroSelect /> */}
-        <MapSelect />
+        {/* <MapSelect /> */}
+        <SideSelect />
       </header>
     </div>
   );

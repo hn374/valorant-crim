@@ -37,6 +37,14 @@
     margin: 10px 10px;
 }
 
+a.mapCard:hover, a.mapCard:hover {
+    height: 450px;
+}
+
+/* .mapHeaderContainer {
+
+} */
+
 /* Add all the maps */
 
 #ascent {

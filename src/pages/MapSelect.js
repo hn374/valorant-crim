@@ -4,7 +4,7 @@ import './MapSelect.css';
 function MapSelect() {
     return(
         <div className="mapSelectContainer">
-            <div className="">
+            <div className="mapHeaderContainer">
                 <h1 className="mapSelectHeader">Select Map</h1>
             </div>
             <div className="mapCardContainer">

@@ -1,8 +1,60 @@
+@font-face {
+    font-family: 'VALORANT Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('VALORANT Regular'), url('../assets/Valorant Font.woff') format('woff');
+}
+
 .sideSelectContainer {
-    height: 700px;
     background-color: #ff4255;
     width: 1200px;
     color: black;
     border-radius: 20px;
     padding-bottom: 36px;
+}
+
+.sideSelectHeader {
+    font-family: 'VALORANT Regular';
+    color: white;
+    margin-top: 24px;
+}
+
+.sideCard {
+    height: 400px;
+    width: 50%;
+    background-color: #0F1825;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px 10px;
+}
+
+.sideCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.sideCard:hover, a.sideCard:hover {
+    height: 450px;
+}
+
+.sideHeaderContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'VALORANT Regular';
+    color: white;
+    margin-top: 24px;
+}
+
+/* Side Card Images */
+
+#blueSide {
+    background-image: url('../assets/blueSide.png');
+}
+
+#redSide {
+    background-image: url('../assets/redSide.png');
 }
