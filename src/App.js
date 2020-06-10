@@ -3,6 +3,7 @@ import './App.css';
 import HeroSelect from './pages/HeroSelect';
 import MapSelect from './pages/MapSelect';
 import SideSelect from './pages/SideSelect';
+import Ability from './pages/Ability';
 import 'rsuite/dist/styles/rsuite-default.css';
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <HeroSelect /> */}
+        <Ability />
         {/* <MapSelect /> */}
-        <SideSelect />
+        {/* <SideSelect /> */}
       </header>
     </div>
   );

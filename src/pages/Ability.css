@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'VALORANT Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('VALORANT Regular'), url('../assets/Valorant Font.woff') format('woff');
+}
+
+.abilityContainer {
+    background-color: #ff4255;
+    width: 1200px;
+    height: 700px;
+    color: black;
+    border-radius: 20px;
+    padding-bottom: 36px;
+}
+
+.abilityHeader {
+    font-family: 'VALORANT Regular';
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 24px;
+    padding-right: 84px;
+}
+
+.abilityHeaderContainer {
+    display: flex;
+}
+
+.abilityBackButton {
+    font-family: 'VALORANT Regular';
+    background-color: #ff4255;
+    color: black;
+    margin-left: 40px;
+    margin-top: 24px;
+    border-radius: 20px;
+    height: 48px;
+    border: 2px solid black;
+}
+
+.abilityBackButton:hover {
+    background-color: #E6E6E6;
+}
