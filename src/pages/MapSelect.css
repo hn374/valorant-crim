@@ -41,6 +41,12 @@ a.mapCard:hover, a.mapCard:hover {
     height: 450px;
 }
 
+.mapName {
+    color: white;
+    font-family: 'VALORANT Regular';
+    margin-top: 65%;
+}
+
 /* .mapHeaderContainer {
 
 } */
