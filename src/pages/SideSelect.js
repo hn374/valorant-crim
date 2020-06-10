@@ -4,7 +4,10 @@ import './SideSelect.css';
 function SideSelect() {
     return(
         <div className="sideSelectContainer">
-            <h1 className="sideSelectHeader">Select Side</h1>
+            <div className="sideHeaderContainer">
+                <button className="sideBackButton">Back</button>
+                <h1 className="sideSelectHeader">Select Side</h1>
+            </div>
             <div className="sideCardContainer">
                 <a id="blueSide" className="sideCard">
                     <h2 id="attackHeader" className="sideHeader">Attack</h2>
