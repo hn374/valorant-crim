@@ -34,10 +34,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 24px;
 }
 
-a.sideCard:hover, a.sideCard:hover {
+a.sideCard:hover, a.sideCard:focus {
     height: 450px;
+    cursor: pointer;
 }
 
 .sideHeaderContainer {
@@ -47,6 +49,23 @@ a.sideCard:hover, a.sideCard:hover {
     font-family: 'VALORANT Regular';
     color: white;
     margin-top: 24px;
+}
+
+.sideHeader, h2.sideHeader:hover, h2.sideHeader:focus {
+    font-family: 'VALORANT Regular';
+    text-decoration: none;
+    text-decoration-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+#defenseHeader {
+    color: blue;
+}
+
+#attackHeader {
+    color: red;
 }
 
 /* Side Card Images */
