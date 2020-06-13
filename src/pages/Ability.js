@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Ability.css';
 
 function Ability() {
     return(
         <div className="abilityContainer">
             <div className="abilityHeaderContainer">
-                <button className="abilityBackButton">Back</button>
+                {/* <button className="abilityBackButton">Back</button> */}
+                <Link to="/side-select" className="abilityBackButton">Back</Link>
                 <h1 className="abilityHeader">Abilities</h1>
             </div>
             <HeroAbilities />

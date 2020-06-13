@@ -1,26 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
-import HeroSelect from './pages/HeroSelect';
-import MapSelect from './pages/MapSelect';
-import SideSelect from './pages/SideSelect';
-import Login from './pages/Login';
-import Ability from './pages/Ability';
 import 'rsuite/dist/styles/rsuite-default.css';
 import AppRouter from './routers/appRouter';
+import AuthRouter from './routers/authRouter';
 import { BrowserRouter as Router } from 'react-router-dom'
+import firebase from './utils/fire';
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  let handleAuthStateChanged = (firebaseUser) => {
+      if (firebaseUser) {
+          setUser(firebaseUser)
+      } else {
+          setUser(null)
+      }
+  }
+
+  useEffect(
+      () => firebase.auth().onAuthStateChanged(handleAuthStateChanged),
+      []
+  )
+
   return (
     <div className="App">
       <header className="App-header">
         <Router>
-          <AppRouter />
+          { user ? <AppRouter /> : <AuthRouter /> }
         </Router>
-        {/* <HeroSelect /> */}
-        {/* <Ability /> */}
-        {/* <Login /> */}
-        {/* <MapSelect /> */}
-        {/* <SideSelect /> */}
       </header>
     </div>
   );

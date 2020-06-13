@@ -1,20 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SideSelect.css';
 
 function SideSelect() {
     return(
         <div className="sideSelectContainer">
             <div className="sideHeaderContainer">
-                <button className="sideBackButton">Back</button>
+                <Link to="/map-select" className="sideBackButton">Back</Link>
                 <h1 className="sideSelectHeader">Select Side</h1>
             </div>
             <div className="sideCardContainer">
-                <a id="blueSide" className="sideCard">
+                <Link to="/ability" id="blueSide" className="sideCard">
                     <h2 id="attackHeader" className="sideHeader">Attack</h2>
-                </a>
-                <a id="redSide" className="sideCard">
+                </Link>
+                <Link to="/ability" id="redSide" className="sideCard">
                     <h2 id="defenseHeader" className="sideHeader">Defense</h2>
-                </a>
+                </Link>
             </div>
         </div>
     );

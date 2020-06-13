@@ -7,7 +7,7 @@ import * as firebaseui from 'firebaseui';
 function Login() {
     const uiConfig = {
         signInFlow: 'redirect',
-        signInSuccessUrl: '/hero-select',
+        signInSuccessUrl: '/add-post',
         signInOptions: [
             firebase.auth.EmailAuthProvider.PROVIDER_ID
         ],
@@ -22,19 +22,5 @@ function Login() {
         </div>
     );
 }
-
-// firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-//     // Handle Errors here.
-//     var errorCode = error.code;
-//     var errorMessage = error.message;
-//     console.log("ERROR:", errorCode, errorMessage);
-// });
-
-// firebase.auth().signOut().then(function() {
-//     // Sign-out successful.
-// }).catch(function(error) {
-//     // An error happened.
-//     console.log("An error happened:", error);
-// });
 
 export default Login;
