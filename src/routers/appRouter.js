@@ -5,6 +5,8 @@ import MapSelect from '../pages/MapSelect';
 import SideSelect from '../pages/SideSelect';
 import Login from '../pages/Login';
 import Ability from '../pages/Ability';
+import AdminPanel from '../pages/AdminPanel';
+
 
 function AppRouter() {
     return(
@@ -15,6 +17,7 @@ function AppRouter() {
             <Route path="/side-select" component={ SideSelect }/>
             <Route path="/ability" component={ Ability }/>
             <Route path="/login" component={ Login }/>
+            <Route path="/admin-panel" component={ AdminPanel }/>
         </Switch>
     );
 }

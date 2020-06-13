@@ -1,0 +1,50 @@
+.adminPanelContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ff4255;
+    border-radius: 20px;
+    /* height: 500px; */
+    width: 35%;
+    font-family: 'VALORANT Regular';
+}
+
+.adminPanelButtonsContainer {
+    margin-bottom: 24px;
+}
+
+.adminPanelButtons {
+    margin-top: 14px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+a.adminPanelButtonLinks:hover, a.adminPanelButtonLinks:focus {
+    text-decoration: none;
+}
+
+.adminPanelHeaderContainer {
+    display: flex;
+    margin-top: 24px;
+}
+
+.adminPanelBackButton {
+    font-family: 'VALORANT Regular';
+    background-color: #ff4255;
+    color: black;
+    border-radius: 20px;
+    margin-right: 24px;
+    padding-top: 8px;
+    height: 48px;
+    border: 2px solid black;
+}
+
+a.adminPanelBackButton:hover, a.adminPanelBackButton:focus {
+    height: 48px;
+    text-decoration: none;
+    color: black;
+    background-color: #E6E6E6;
+}

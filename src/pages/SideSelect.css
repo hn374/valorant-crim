@@ -44,6 +44,7 @@
 a.sideCard:hover, a.sideCard:focus {
     height: 450px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .sideHeaderContainer {
@@ -72,8 +73,18 @@ a.sideCard:hover, a.sideCard:focus {
     margin-top: 24px;
     border-radius: 20px;
     margin-bottom: 24px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
     height: 48px;
     border: 2px solid black;
+}
+
+a.sideBackButton:hover, a.sideBackButton:focus {
+    height: 48px;
+    text-decoration: none;
+    color: black;
+    background-color: #E6E6E6;
 }
 
 .sideHeaderContainer {

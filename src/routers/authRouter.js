@@ -6,6 +6,7 @@ import SideSelect from '../pages/SideSelect';
 import AddPost from '../pages/AddPost';
 import Login from '../pages/Login';
 import Ability from '../pages/Ability';
+import AdminPanel from '../pages/AdminPanel';
 
 function AuthRouter() {
     return(
@@ -17,6 +18,7 @@ function AuthRouter() {
             <Route path="/ability" component={ Ability }/>
             <Route path="/login" component={ Login }/>
             <Route path="/add-post" component={ AddPost }/>
+            <Route path="/admin-panel" component={ AdminPanel }/>
         </Switch>
     );
 }

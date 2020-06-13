@@ -42,6 +42,7 @@
 
 a.mapCard:hover, a.mapCard:hover {
     height: 450px;
+    text-decoration: none;
 }
 
 .mapName {
@@ -61,11 +62,17 @@ a.mapCard:hover, a.mapCard:hover {
     margin-left: 40px;
     margin-top: 24px;
     border-radius: 20px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
     height: 48px;
     border: 2px solid black;
 }
 
-.mapBackButton:hover {
+a.mapBackButton:hover, a.mapBackButton:focus {
+    height: 48px;
+    text-decoration: none;
+    color: black;
     background-color: #E6E6E6;
 }
 
