@@ -6,7 +6,8 @@ import SideSelect from '../pages/SideSelect';
 import Login from '../pages/Login';
 import Ability from '../pages/Ability';
 import AdminPanel from '../pages/AdminPanel';
-
+import AddPost from '../pages/AddPost';
+import DeletePost from '../pages/DeletePost';
 
 function AppRouter() {
     return(
@@ -17,6 +18,8 @@ function AppRouter() {
             <Route path="/side-select" component={ SideSelect }/>
             <Route path="/ability" component={ Ability }/>
             <Route path="/login" component={ Login }/>
+            <Route path="/add-post" component={ AddPost }/>
+            <Route path="/delete-post" component={ DeletePost }/>
             <Route path="/admin-panel" component={ AdminPanel }/>
         </Switch>
     );

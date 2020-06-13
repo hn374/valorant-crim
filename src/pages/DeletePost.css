@@ -1,4 +1,4 @@
-.addPostContainer {
+.deletePostContainer {
     display: flex;
     flex-direction: column;
     font-family: 'VALORANT Regular';
@@ -8,13 +8,13 @@
     border-radius: 20px;
 }
 
-.addPostHeaderContainer {
+.deletePostHeaderContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.addPostBackButton {
+.deletePostBackButton {
     background-color: #ff4255;
     color: black;
     margin-left: 24px;
@@ -28,13 +28,13 @@
     border: 2px solid black;
 }
 
-a.addPostBackButton:hover, a.addPostBackButton:focus {
+a.deletePostBackButton:hover, a.deletePostBackButton:focus {
     height: 48px;
     text-decoration: none;
     color: black;
     background-color: #E6E6E6;
 }
 
-.addPostHeader {
+.deletePostHeader {
     width: 100%;
 }
