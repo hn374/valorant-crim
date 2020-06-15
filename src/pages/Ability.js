@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Ability.css';
 import * as Scroll from 'react-scroll';
-import SimpleModalSlideshow from 'react-simple-modal-slideshow';
+import { SRLWrapper } from "simple-react-lightbox";
 
 const ScrollLink = Scroll.Link;
 const ScrollElement = Scroll.Element;
@@ -12,32 +12,21 @@ function Ability() {
     const slides = [];
 
     for (let i = 0; i < 30; i++) {
-    imgs.push(`https://unsplash.it/200/200?image=${i}`);
+        const imageObject = {
+            src: `https://unsplash.it/200/200?image=${i}`,
+            caption: i,
+            width: 400,
+            height: "auto"
+        }
 
-    slides.push({
-        media: (
-        <img src={`https://unsplash.it/600/400?image=${i}`} />
-        ),
-    });
-    }
-    const [isOpen, setIsOpen] = useState(false);
-    const [currentSlide, setCurrentSlide] = useState(0);
+        // imgs.push(`https://unsplash.it/200/200?image=${i}`);
+        imgs.push(imageObject);
 
-    function handlePrev(index) {
-        setCurrentSlide(index);
-    }
-
-    function handleNext(index) {
-        setCurrentSlide(index);
-    }
-
-    function handleClose() {
-        setIsOpen(false);
-    }
-
-    function openSlideShow(index) {
-        setIsOpen(true);
-        setCurrentSlide(index);
+        slides.push({
+            media: (
+            <img src={`https://unsplash.it/600/400?image=${i}`} />
+            ),
+        });
     }
 
     return(
@@ -48,26 +37,17 @@ function Ability() {
             </div>
             <HeroAbilities />
             <ScrollElement id="firstAbility" name="firstAbility">
-                <TipsSection />
+                <TipsSection images={imgs}/>
             </ScrollElement>
             <ScrollElement id="secondAbility" name="secondAbility">
-                <TipsSection />
+                <TipsSection images={imgs}/>
             </ScrollElement>
             <ScrollElement id="thirdAbility" name="thirdAbility">
-                <TipsSection />
+                <TipsSection images={imgs}/>
             </ScrollElement>
             <ScrollElement id="fourthAbility" name="fourthAbility">
-                <TipsSection />
+                <TipsSection images={imgs}/>
             </ScrollElement>
-
-            {/* <SimpleModalSlideshow
-                slides={slides}
-                open={isOpen}
-                currentSlide={currentSlide}
-                onClose={handleClose}
-                onNext={handleNext}
-                onPrev={handlePrev}
-            /> */}
         </div>
     );
 }
@@ -111,17 +91,32 @@ function HeroAbilities() {
     );
 }
 
-function TipsSection() {
+function TipsSection(props) {
+    const options = {
+        buttons: {
+          backgroundColor: 'rgba(30,30,36,0.8)',
+          iconColor: 'rgba(255, 255, 255, 0.8)',
+          iconPadding: '5px',
+          showAutoplayButton: false,
+          showCloseButton: true,
+          showDownloadButton: false,
+          showFullscreenButton: false,
+          showNextButton: true,
+          showPrevButton: true,
+          showThumbnailsButton: false,
+          size: '40px'
+        }
+    };
+
     return(
         <div className="tipsContainer">
             <h1>Ability Name</h1>
             <div className="tipsCardContainer">
-                <div className="tipCard"></div>
-                <div className="tipCard"></div>
-                <div className="tipCard"></div>
-                <div className="tipCard"></div>
-                <div className="tipCard"></div>
-                <div className="tipCard"></div>
+                <SRLWrapper options={options}>
+                    <img className="tipCard" src={`https://unsplash.it/600/400?image=1`} />
+                    <img className="tipCard" src={`https://unsplash.it/600/400?image=2`} />
+                    <img className="tipCard" src={`https://unsplash.it/600/400?image=3`} />
+                </SRLWrapper>
             </div>
         </div>
     );

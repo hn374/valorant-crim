@@ -93,9 +93,13 @@ a.heroAbility:hover, a.heroAbility:focus {
 }
 
 .tipCard {
-    height: 150px;
-    width: 28%;
+    height: 300px;
+    width: 30%;
     background-color: green;
     margin-left: 8px;
     margin-top: 16px;
+}
+
+img.tipCard:hover, img.tipCard:focus {
+    cursor: pointer;
 }

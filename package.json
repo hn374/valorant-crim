@@ -18,8 +18,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16",
-    "react-simple-modal-slideshow": "^1.0.1",
-    "rsuite": "^4.7.3"
+    "rsuite": "^4.7.3",
+    "simple-react-lightbox": "^3.1.2-3"
   },
   "scripts": {
     "start": "react-scripts start",

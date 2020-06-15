@@ -5,6 +5,7 @@ import AppRouter from './routers/appRouter';
 import AuthRouter from './routers/authRouter';
 import { BrowserRouter as Router } from 'react-router-dom'
 import firebase from './utils/fire';
+import SimpleReactLightbox from "simple-react-lightbox";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -25,9 +26,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Router>
-          { user ? <AppRouter /> : <AuthRouter /> }
-        </Router>
+      <SimpleReactLightbox>
+          <Router>
+            { user ? <AppRouter /> : <AuthRouter /> }
+          </Router>
+        </SimpleReactLightbox>
       </header>
     </div>
   );
