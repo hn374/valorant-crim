@@ -9,13 +9,16 @@
     "express": "^4.17.1",
     "firebase": "^7.15.1",
     "firebaseui": "^4.5.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.13.1",
     "react-firebaseui": "^4.1.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16",
+    "react-simple-modal-slideshow": "^1.0.1",
     "rsuite": "^4.7.3"
   },
   "scripts": {

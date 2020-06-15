@@ -1,12 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Ability.css';
 import * as Scroll from 'react-scroll';
+import SimpleModalSlideshow from 'react-simple-modal-slideshow';
 
 const ScrollLink = Scroll.Link;
 const ScrollElement = Scroll.Element;
 
 function Ability() {
+    const imgs = [];
+    const slides = [];
+
+    for (let i = 0; i < 30; i++) {
+    imgs.push(`https://unsplash.it/200/200?image=${i}`);
+
+    slides.push({
+        media: (
+        <img src={`https://unsplash.it/600/400?image=${i}`} />
+        ),
+    });
+    }
+    const [isOpen, setIsOpen] = useState(false);
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    function handlePrev(index) {
+        setCurrentSlide(index);
+    }
+
+    function handleNext(index) {
+        setCurrentSlide(index);
+    }
+
+    function handleClose() {
+        setIsOpen(false);
+    }
+
+    function openSlideShow(index) {
+        setIsOpen(true);
+        setCurrentSlide(index);
+    }
+
     return(
         <div className="abilityContainer">
             <div className="abilityHeaderContainer">
@@ -26,6 +59,15 @@ function Ability() {
             <ScrollElement id="fourthAbility" name="fourthAbility">
                 <TipsSection />
             </ScrollElement>
+
+            {/* <SimpleModalSlideshow
+                slides={slides}
+                open={isOpen}
+                currentSlide={currentSlide}
+                onClose={handleClose}
+                onNext={handleNext}
+                onPrev={handlePrev}
+            /> */}
         </div>
     );
 }
