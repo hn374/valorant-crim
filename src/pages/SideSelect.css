@@ -42,7 +42,7 @@
 }
 
 a.sideCard:hover, a.sideCard:focus {
-    height: 450px;
+    /* height: 450px; */
     cursor: pointer;
     text-decoration: none;
 }
@@ -81,7 +81,6 @@ a.sideCard:hover, a.sideCard:focus {
 }
 
 a.sideBackButton:hover, a.sideBackButton:focus {
-    height: 48px;
     text-decoration: none;
     color: black;
     background-color: #E6E6E6;

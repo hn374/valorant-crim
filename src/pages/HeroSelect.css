@@ -35,9 +35,9 @@
     margin: 10px 10px;
 }
 
-a:hover, a:focus {
+/* a:hover, a:focus {
     height: 232px;
-}
+} */
 
 .heroSelectHeader {
     color: white;

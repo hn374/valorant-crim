@@ -43,7 +43,6 @@
 }
 
 a.abilityBackButton:hover, a.abilityBackButton:focus {
-    height: 48px;
     text-decoration: none;
     color: black;
     background-color: #E6E6E6;
@@ -102,4 +101,30 @@ a.heroAbility:hover, a.heroAbility:focus {
 
 img.tipCard:hover, img.tipCard:focus {
     cursor: pointer;
+}
+
+/* Ability Cards */
+
+#firstAbilityCard {
+    background-image: url('../assets/sage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#secondAbilityCard {
+    background-image: url('../assets/breach.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#thirdAbilityCard {
+    background-image: url('../assets/brimstone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fourthAbilityCard {
+    background-image: url('../assets/cypher.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

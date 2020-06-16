@@ -41,7 +41,7 @@
 }
 
 a.mapCard:hover, a.mapCard:hover {
-    height: 450px;
+    /* height: 450px; */
     text-decoration: none;
 }
 
@@ -70,7 +70,6 @@ a.mapCard:hover, a.mapCard:hover {
 }
 
 a.mapBackButton:hover, a.mapBackButton:focus {
-    height: 48px;
     text-decoration: none;
     color: black;
     background-color: #E6E6E6;

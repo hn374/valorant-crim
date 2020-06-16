@@ -56,6 +56,7 @@ function HeroAbilities() {
     return(
         <div className="heroAbilitiesContainer">
             <ScrollLink
+            id="firstAbilityCard"
             to="firstAbility" 
             spy={true} 
             smooth={true} 
@@ -64,6 +65,7 @@ function HeroAbilities() {
             className="heroAbility">
             </ScrollLink>
             <ScrollLink
+            id="secondAbilityCard"
             to="secondAbility" 
             spy={true} 
             smooth={true} 
@@ -72,6 +74,7 @@ function HeroAbilities() {
             className="heroAbility">
             </ScrollLink>
             <ScrollLink
+            id="thirdAbilityCard"
             to="thirdAbility" 
             spy={true} 
             smooth={true} 
@@ -80,6 +83,7 @@ function HeroAbilities() {
             className="heroAbility">
             </ScrollLink>
             <ScrollLink
+            id="fourthAbilityCard"
             to="fourthAbility" 
             spy={true} 
             smooth={true} 
