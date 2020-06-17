@@ -108,6 +108,10 @@ img.tipCard:hover, img.tipCard:focus {
     margin: 10px 10px;
 }
 
+.buttonColor {
+    background-color: #0F1825;
+}
+
 /* Ability Cards */
 
 #firstAbilityCard {
