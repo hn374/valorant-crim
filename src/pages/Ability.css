@@ -103,6 +103,11 @@ img.tipCard:hover, img.tipCard:focus {
     cursor: pointer;
 }
 
+.customCarousel {
+    width: 25%;
+    margin: 10px 10px;
+}
+
 /* Ability Cards */
 
 #firstAbilityCard {

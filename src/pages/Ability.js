@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Ability.css';
 import * as Scroll from 'react-scroll';
-import { SRLWrapper } from "simple-react-lightbox";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const ScrollLink = Scroll.Link;
 const ScrollElement = Scroll.Element;
@@ -116,11 +117,72 @@ function TipsSection(props) {
         <div className="tipsContainer">
             <h1>Ability Name</h1>
             <div className="tipsCardContainer">
-                <SRLWrapper options={options}>
-                    <img className="tipCard" src={`https://unsplash.it/600/400?image=1`} />
-                    <img className="tipCard" src={`https://unsplash.it/600/400?image=2`} />
-                    <img className="tipCard" src={`https://unsplash.it/600/400?image=3`} />
-                </SRLWrapper>
+                <Carousel 
+                className="customCarousel"
+                showThumbs={false}
+                showIndicators={false}
+                infiniteLoop={true}
+                showStatus={false}
+                >
+                    <img src={`https://unsplash.it/600/400?image=1`} />
+                    <img src={`https://unsplash.it/600/400?image=2`} />
+                    <img src={`https://unsplash.it/600/400?image=3`} />
+                </Carousel>
+                <Carousel 
+                className="customCarousel"
+                showThumbs={false}
+                showIndicators={false}
+                infiniteLoop={true}
+                showStatus={false}
+                >
+                    <img src={`https://unsplash.it/600/400?image=1`} />
+                    <img src={`https://unsplash.it/600/400?image=2`} />
+                    <img src={`https://unsplash.it/600/400?image=3`} />
+                </Carousel>
+                <Carousel 
+                className="customCarousel"
+                showThumbs={false}
+                showIndicators={false}
+                infiniteLoop={true}
+                showStatus={false}
+                >
+                    <img src={`https://unsplash.it/600/400?image=1`} />
+                    <img src={`https://unsplash.it/600/400?image=2`} />
+                    <img src={`https://unsplash.it/600/400?image=3`} />
+                </Carousel>
+                <Carousel 
+                className="customCarousel"
+                showThumbs={false}
+                showIndicators={false}
+                infiniteLoop={true}
+                showStatus={false}
+                >
+                    <img src={`https://unsplash.it/600/400?image=1`} />
+                    <img src={`https://unsplash.it/600/400?image=2`} />
+                    <img src={`https://unsplash.it/600/400?image=3`} />
+                </Carousel>
+                <Carousel 
+                className="customCarousel"
+                showThumbs={false}
+                showIndicators={false}
+                infiniteLoop={true}
+                showStatus={false}
+                >
+                    <img src={`https://unsplash.it/600/400?image=1`} />
+                    <img src={`https://unsplash.it/600/400?image=2`} />
+                    <img src={`https://unsplash.it/600/400?image=3`} />
+                </Carousel>
+                <Carousel 
+                className="customCarousel"
+                showThumbs={false}
+                showIndicators={false}
+                infiniteLoop={true}
+                showStatus={false}
+                >
+                    <img src={`https://unsplash.it/600/400?image=1`} />
+                    <img src={`https://unsplash.it/600/400?image=2`} />
+                    <img src={`https://unsplash.it/600/400?image=3`} />
+                </Carousel>
             </div>
         </div>
     );
