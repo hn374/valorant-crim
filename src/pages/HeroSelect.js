@@ -1,8 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './HeroSelect.css';
+import firebase from '../utils/fire';
 
 function HeroSelect() {
+    const [heroes, setHeroes] = useState([]);
+
+    useEffect(() => {
+        // firebase.database().ref('/heroes').on('value', (snapshot) => {
+        //     const heroObject = snapshot.val();
+        //     heroArray.push(heroObject);
+        //     setHeroes(heroArray);
+        //     // console.log(heroArray);
+        // });
+
+        getFirebaseHeroes();
+
+        console.log("THIS IS HEROES", heroes);
+    }, []);
+
+    async function getFirebaseHeroes() {
+        let heroArray = [];
+
+        await firebase.database().ref('/heroes').on('value', (snapshot) => {
+            const heroObject = snapshot.val();
+            heroArray.push(heroObject);
+
+            console.log(heroArray);
+        });
+    }
+
     return(
         <div className="heroSelectContainer">
             <div className="heroHeaderContainer">
