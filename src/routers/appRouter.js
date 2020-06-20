@@ -7,6 +7,12 @@ import Login from '../pages/Login';
 import Ability from '../pages/Ability';
 import AdminPanel from '../pages/AdminPanel';
 import AddPost from '../pages/AddPost';
+import AddHero from '../pages/AddHero';
+import AddMap from '../pages/AddMap';
+import AddAbility from '../pages/AddAbility';
+import DeleteHero from '../pages/DeleteHero';
+import DeleteMap from '../pages/DeleteMap';
+import DeleteAbility from '../pages/DeleteAbility';
 import DeletePost from '../pages/DeletePost';
 
 function AppRouter() {
@@ -19,7 +25,13 @@ function AppRouter() {
             <Route path="/ability" component={ Ability }/>
             <Route path="/login" component={ Login }/>
             <Route path="/add-post" component={ AddPost }/>
+            <Route path="/add-hero" component={ AddHero }/>
+            <Route path="/add-map" component={ AddMap }/>
+            <Route path="/add-ability" component={ AddAbility }/>
             <Route path="/delete-post" component={ DeletePost }/>
+            <Route path="/delete-hero" component={ DeleteHero }/>
+            <Route path="/delete-map" component={ DeleteMap }/>
+            <Route path="/delete-ability" component={ DeleteAbility }/>
             <Route path="/admin-panel" component={ AdminPanel }/>
         </Switch>
     );

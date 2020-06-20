@@ -7,7 +7,7 @@ import * as firebaseui from 'firebaseui';
 function Login() {
     const uiConfig = {
         signInFlow: 'redirect',
-        signInSuccessUrl: '/add-post',
+        signInSuccessUrl: '/admin-panel',
         signInOptions: [
             firebase.auth.EmailAuthProvider.PROVIDER_ID
         ],

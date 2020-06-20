@@ -1,0 +1,40 @@
+.addAbilityContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: 'VALORANT Regular';
+    height: 500px;
+    width: 45%;
+    background-color: #ff4255;
+    border-radius: 20px;
+}
+
+.addAbilityHeaderContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.addAbilityBackButton {
+    background-color: #ff4255;
+    color: black;
+    margin-left: 24px;
+    margin-right: auto;
+    margin-top: 24px;
+    border-radius: 20px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 48px;
+    border: 2px solid black;
+}
+
+a.addAbilityBackButton:hover, a.addAbilityBackButton:focus {
+    height: 48px;
+    text-decoration: none;
+    color: black;
+    background-color: #E6E6E6;
+}
+
+.addAbilityHeader {
+    width: 100%;
+}
