@@ -5,12 +5,14 @@ import * as Scroll from 'react-scroll';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
-import ReactMediumImg from 'react-medium-zoom';
-
 const ScrollLink = Scroll.Link;
 const ScrollElement = Scroll.Element;
 
 function Ability() {
+    const [selectedHero, setSelectedHero] = useState(localStorage.getItem('selectedHero'));
+    const [selectedMap, setSelectedMap] = useState(localStorage.getItem('selectedMap'));
+    const [selectedSide, setSelectedSide] = useState(localStorage.getItem('selectedSide'));
+
     const imgs = [];
     const slides = [];
 
@@ -115,10 +117,6 @@ function TipsSection(props) {
         }
     };
 
-    function clicked() {
-        console.log("HELLO WORLD");
-    }
-
     return(
         <div className="tipsContainer">
             <h1>Ability Name</h1>
@@ -129,12 +127,8 @@ function TipsSection(props) {
                 showIndicators={false}
                 infiniteLoop={true}
                 showStatus={false}
-                >
-                    <div>
-                        <button onClick={clicked} className="buttonColor"><img src={`https://unsplash.it/600/400?image=1`}/></button>
-                    </div>
-                    
-                    {/* <img src={`https://unsplash.it/600/400?image=1`}/> */}
+                >   
+                    <img src={`https://unsplash.it/600/400?image=1`}/>
                     <img src={`https://unsplash.it/600/400?image=2`} />
                     <img src={`https://unsplash.it/600/400?image=3`} />
                 </Carousel>

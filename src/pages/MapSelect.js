@@ -10,28 +10,16 @@ function MapSelect() {
                 <h1 className="mapSelectHeader">Select Map</h1>
             </div>
             <div className="mapCardContainer">
-                {/* <a id="ascent" className="mapCard">
-                    <h2 className="mapName">Ascent</h2>
-                </a>
-                <a id="bind" className="mapCard">
-                    <h2 className="mapName">Bind</h2>
-                </a>
-                <a id="haven" className="mapCard">
-                    <h2 className="mapName">Haven</h2>
-                </a>
-                <a id="split" className="mapCard">
-                    <h2 className="mapName">Split</h2>
-                </a> */}
-                <Link to="/side-select" id="ascent" className="mapCard">
+                <Link to="/side-select" id="ascent" className="mapCard" onClick={() => localStorage.setItem('selectedMap', "ascent")}>
                     <h2 className="mapName">Ascent</h2>
                 </Link>
-                <Link to="/side-select" id="bind" className="mapCard">
+                <Link to="/side-select" id="bind" className="mapCard" onClick={() => localStorage.setItem('selectedMap', "bind")}>
                     <h2 className="mapName">Bind</h2>
                 </Link>
-                <Link to="/side-select" id="haven" className="mapCard">
+                <Link to="/side-select" id="haven" className="mapCard" onClick={() => localStorage.setItem('selectedMap', "haven")}>
                     <h2 className="mapName">Haven</h2>
                 </Link>
-                <Link to="/side-select" id="split" className="mapCard">
+                <Link to="/side-select" id="split" className="mapCard" onClick={() => localStorage.setItem('selectedMap', "split")}>
                     <h2 className="mapName">Split</h2>
                 </Link>
             </div>

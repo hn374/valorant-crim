@@ -10,10 +10,10 @@ function SideSelect() {
                 <h1 className="sideSelectHeader">Select Side</h1>
             </div>
             <div className="sideCardContainer">
-                <Link to="/ability" id="blueSide" className="sideCard">
+                <Link to="/ability" id="blueSide" className="sideCard" onClick={() => localStorage.setItem('selectedSide', "attack")}>
                     <h2 id="attackHeader" className="sideHeader">Attack</h2>
                 </Link>
-                <Link to="/ability" id="redSide" className="sideCard">
+                <Link to="/ability" id="redSide" className="sideCard" onClick={() => localStorage.setItem('selectedSide', "defense")}>
                     <h2 id="defenseHeader" className="sideHeader">Defense</h2>
                 </Link>
             </div>
