@@ -7,7 +7,7 @@ function AddAbility() {
         <div className="addAbilityContainer">
             <div className="addAbilityHeaderContainer">
                 <Link to="/add-post" className="addAbilityBackButton">Back</Link>
-                <h1 className="addAbilityHeader">Add Ability</h1>
+                <h1 className="addAbilityHeader">Add Ability Tips</h1>
             </div>
         </div>
     );

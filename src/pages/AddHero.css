@@ -38,3 +38,31 @@ a.addHeroBackButton:hover, a.addHeroBackButton:focus {
 .addHeroHeader {
     width: 100%;
 }
+
+.heroNameInput {
+    color: black;
+}
+
+.heroNameLabel {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.heroImageLabel {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.heroFileInput {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-bottom: 24px;
+}
+
+.addHeroForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}

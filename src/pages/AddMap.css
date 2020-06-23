@@ -38,3 +38,31 @@ a.addMapBackButton:hover, a.addMapBackButton:focus {
 .addMapHeader {
     width: 100%;
 }
+
+.mapNameInput {
+    color: black;
+}
+
+.mapNameLabel {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.mapImageLabel {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.mapFileInput {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-bottom: 24px;
+}
+
+.addMapForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
