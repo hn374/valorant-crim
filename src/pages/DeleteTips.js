@@ -1,14 +1,14 @@
 import React from 'react';
-import './DeleteAbility.css';
+import './DeleteTips.css';
 import { Link } from 'react-router-dom';
 import { Dropdown } from 'rsuite';
 
-function DeleteAbility() {
+function DeleteTips() {
     return(
-        <div className="deleteAbilityContainer">
-            <div className="deleteAbilityHeaderContainer">
-                <Link to="/delete-post" className="deleteAbilityBackButton">Back</Link>
-                <h1 className="deleteAbilityHeader">Delete Ability</h1>
+        <div className="addTipsContainer">
+            <div className="addTipsHeaderContainer">
+                <Link to="/delete-post" className="addTipsBackButton">Back</Link>
+                <h1 className="addTipsHeader">Delete Ability Tips</h1>
             </div>
             <div className="dropdownContainer">
                 <Dropdown className="heroDropdown" title="Select Hero">
@@ -30,11 +30,17 @@ function DeleteAbility() {
                 <Dropdown className="sideDropdown" title="Select Ability">
                     <Dropdown.Item>Attack</Dropdown.Item>
                     <Dropdown.Item>Defense</Dropdown.Item>
+                    {/* Insert Abilities Here */}
                 </Dropdown>
-                <button className="addAbilityButton">Delete</button>
+                <Dropdown className="sideDropdown" title="Select Tip">
+                    <Dropdown.Item>Attack</Dropdown.Item>
+                    <Dropdown.Item>Defense</Dropdown.Item>
+                    {/* Insert Abilities Here */}
+                </Dropdown>
+                <button className="addtipsButton">Delete</button>
             </div>
         </div>
     );
 }
 
-export default DeleteAbility;
+export default DeleteTips;

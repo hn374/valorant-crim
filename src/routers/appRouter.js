@@ -15,6 +15,7 @@ import DeleteHero from '../pages/DeleteHero';
 import DeleteMap from '../pages/DeleteMap';
 import DeleteAbility from '../pages/DeleteAbility';
 import DeletePost from '../pages/DeletePost';
+import DeleteTips from '../pages/DeleteTips';
 
 function AppRouter() {
     return(
@@ -34,6 +35,7 @@ function AppRouter() {
             <Route path="/delete-hero" component={ DeleteHero }/>
             <Route path="/delete-map" component={ DeleteMap }/>
             <Route path="/delete-ability" component={ DeleteAbility }/>
+            <Route path="/delete-tips" component={ DeleteTips }/>
             <Route path="/admin-panel" component={ AdminPanel }/>
         </Switch>
     );

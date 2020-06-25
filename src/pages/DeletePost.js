@@ -12,7 +12,8 @@ function DeletePost() {
             <div className="deleteButtonsContainer">
                 <Link to="/delete-hero" className="deletePostButton">Hero</Link>
                 <Link to="/delete-map" className="deletePostButton">Map</Link>
-                <Link to="/delete-ability" className="deletePostButton">Ability Tips</Link>
+                <Link to="/delete-ability" className="deletePostButton">Ability</Link>
+                <Link to="/delete-tips" className="deletePostButton">Ability Tips</Link>
             </div>
         </div>
     );
