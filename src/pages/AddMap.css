@@ -58,6 +58,7 @@ a.addMapBackButton:hover, a.addMapBackButton:focus {
     margin-right: auto;
     width: 75%;
     margin-bottom: 24px;
+    padding-left: 36px;
 }
 
 .addMapForm {
