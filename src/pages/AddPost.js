@@ -12,7 +12,8 @@ function AddPost() {
             <div className="addButtonsContainer">
                 <Link to="/add-hero" className="addPostButton">Hero</Link>
                 <Link to="/add-map" className="addPostButton">Map</Link>
-                <Link to="/add-ability" className="addPostButton">Ability Tips</Link>
+                <Link to="/add-ability" className="addPostButton">Ability</Link>
+                <Link to="/add-tips" className="addPostButton">Ability Tips</Link>
             </div>
         </div>
     );

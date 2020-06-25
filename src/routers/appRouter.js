@@ -10,6 +10,7 @@ import AddPost from '../pages/AddPost';
 import AddHero from '../pages/AddHero';
 import AddMap from '../pages/AddMap';
 import AddAbility from '../pages/AddAbility';
+import AddTips from '../pages/AddTips';
 import DeleteHero from '../pages/DeleteHero';
 import DeleteMap from '../pages/DeleteMap';
 import DeleteAbility from '../pages/DeleteAbility';
@@ -28,6 +29,7 @@ function AppRouter() {
             <Route path="/add-hero" component={ AddHero }/>
             <Route path="/add-map" component={ AddMap }/>
             <Route path="/add-ability" component={ AddAbility }/>
+            <Route path="/add-tips" component={ AddTips }/>
             <Route path="/delete-post" component={ DeletePost }/>
             <Route path="/delete-hero" component={ DeleteHero }/>
             <Route path="/delete-map" component={ DeleteMap }/>
