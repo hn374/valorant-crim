@@ -71,3 +71,38 @@ a.addAbilityBackButton:hover, a.addAbilityBackButton:focus {
     margin-top: 8px;
     margin-bottom: 8px;
 }
+
+.abilityLabel {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.abilityInputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.abilityInput {
+    color: black;
+}
+
+.addAbilityButton {
+    background-color: #ff4255;
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 24px;
+    border-radius: 20px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 48px;
+    border: 2px solid black;
+}
+
+button.addAbilityButton:hover, button.addAbilityButton:focus {
+    height: 48px;
+    text-decoration: none;
+    color: black;
+    background-color: #E6E6E6;
+}

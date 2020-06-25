@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './AddAbility.css';
 import { Link } from 'react-router-dom';
 import { Dropdown } from 'rsuite';
@@ -10,15 +10,14 @@ function AddAbility() {
     useEffect(() => {
         // firebase.database().ref('/heroes').on('value', (snapshot) => {
         //     const heroObject = snapshot.val();
-        //     heroArray.push(heroObject);
-        //     setHeroes(heroArray);
         //     // console.log(heroArray);
         // });
 
         getFirebaseHeroes();
+        getFirebaseMaps();
 
         console.log("THIS IS HEROES", heroes);
-    }, []);
+    }, [heroes]);
 
     async function getFirebaseHeroes() {
         let heroArray = [];
@@ -28,6 +27,17 @@ function AddAbility() {
             heroArray.push(heroObject);
 
             console.log(heroArray);
+        });
+    }
+
+    async function getFirebaseMaps() {
+        let mapArray = [];
+
+        await firebase.database().ref('/maps').on('value', (snapshot) => {
+            const mapObject = snapshot.val();
+            mapArray.push(mapObject);
+
+            console.log(mapArray);
         });
     }
 
@@ -54,6 +64,11 @@ function AddAbility() {
                     <Dropdown.Item>Attack</Dropdown.Item>
                     <Dropdown.Item>Defense</Dropdown.Item>
                 </Dropdown>
+                <div className="abilityInputContainer">
+                    <label className="abilityLabel">Enter Ability Name</label>
+                    <input className="abilityInput" type="text"></input>
+                </div>
+                <button className="addAbilityButton">Add</button>
             </div>
         </div>
     );
