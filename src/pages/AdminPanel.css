@@ -37,10 +37,10 @@ a.adminPanelButtonLinks:hover, a.adminPanelButtonLinks:focus {
     background-color: #ff4255;
     color: black;
     border-radius: 20px;
-    margin-right: 24px;
-    padding-top: 8px;
+    padding-top: 4px;
     padding-left: 8px;
     padding-right: 8px;
+    margin-right: auto;
     height: 48px;
     border: 2px solid black;
 }
