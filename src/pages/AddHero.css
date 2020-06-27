@@ -41,6 +41,7 @@ a.addHeroBackButton:hover, a.addHeroBackButton:focus {
 
 .heroNameInput {
     color: black;
+    /* z-index: 1; */
 }
 
 .heroNameLabel {
