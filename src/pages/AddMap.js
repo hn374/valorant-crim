@@ -7,11 +7,19 @@ function AddMap() {
     const [mapName, setMapName] = useState("");
     const [image, setImage] = useState("");
 
-    const addMapToFirebase = (event) => {
-        // Insert post request to firebase database
-        // firebase.database().ref('/heroes').on('value', (snapshot) => {
-        //     const heroObject = snapshot.val();
-        // });
+    const addMapToFirebase = (event, mapName, image) => {
+        var ref = firebase.database().ref("/maps");
+
+        var mapObject = {
+            mapName: mapName,
+            image: image // needs to be path to image in firebase storage
+        };
+
+        ref.push().set(mapObject);
+
+        console.log(mapName);
+        console.log(image);
+        console.log("Call to firebase");
 
         event.preventDefault();
     };
@@ -30,7 +38,7 @@ function AddMap() {
                 <Link to="/add-post" className="addMapBackButton">Back</Link>
                 <h1 className="addMapHeader">Add Map</h1>
                 {/* Add Map Name and Map Image */}
-                <form className="addMapForm" onSubmit={addMapToFirebase}>
+                <form className="addMapForm" onSubmit={(e) => addMapToFirebase(e, mapName, image)}>
                     <label className="mapNameLabel">
                         Map Name:
                     </label>

@@ -7,16 +7,9 @@ function HeroSelect() {
     const [heroes, setHeroes] = useState([]);
 
     useEffect(() => {
-        // firebase.database().ref('/heroes').on('value', (snapshot) => {
-        //     const heroObject = snapshot.val();
-        //     heroArray.push(heroObject);
-        //     setHeroes(heroArray);
-        //     // console.log(heroArray);
-        // });
-
         getFirebaseHeroes();
 
-        console.log("THIS IS HEROES", heroes);
+        // console.log("THIS IS HEROES", heroes);
     }, []);
 
     async function getFirebaseHeroes() {
@@ -26,7 +19,9 @@ function HeroSelect() {
             const heroObject = snapshot.val();
             heroArray.push(heroObject);
 
+            setHeroes(heroArray);
             console.log(heroArray);
+            console.log("THIS IS HEROES", heroes);
         });
     }
 
